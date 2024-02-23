@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver"
+    tools:context=".MainActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/emblema_one"
+        android:paddingTop="20dp"
+        android:text="Mr Potato Head"
+        android:textColor="@color/turkish_sea"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/bodyImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Body Image -->
+    <ImageView
+        android:id="@+id/bodyImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/body"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxContainer"/>
+
+    <!-- CheckBox Container -->
+    <GridLayout
+        android:id="@+id/checkBoxContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- CheckBox for Ear -->
+        <CheckBox
+            android:id="@+id/earCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ear"
+            android:textSize="22sp"
+            android:textColor="@color/turkish_sea" />
+
+        <!-- CheckBox for Eyes -->
+        <CheckBox
+            android:id="@+id/eyesCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eyes"
+            android:textSize="22sp"
+            android:textColor="@color/turkish_sea" />
+
+        <!-- CheckBox for Glasses -->
+        <CheckBox
+            android:id="@+id/glassesCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Glasses"
+            android:textSize="22sp"
+            android:textColor="@color/turkish_sea" />
+
+        <!-- CheckBox for Arms -->
+        <CheckBox
+            android:id="@+id/armsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arms"
+            android:textSize="22sp"
+            android:textColor="@color/turkish_sea" />
+
+        <!-- CheckBox for Eyebrows -->
+        <CheckBox
+            android:id="@+id/eyebrowsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eyebrows"
+            android:textSize="22sp"
+            android:textColor="@color/turkish_sea" />
+
+        <!-- CheckBox for Hat -->
+        <CheckBox
+            android:id="@+id/hatCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hat"
+            android:textSize="22sp"
+            android:textColor="@color/turkish_sea" />
+
+        <!-- CheckBox for Mouth -->
+        <CheckBox
+            android:id="@+id/mouthCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mouth"
+            android:textSize="22sp"
+            android:textColor="@color/turkish_sea" />
+
+        <!-- CheckBox for Mustache -->
+        <CheckBox
+            android:id="@+id/mustacheCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mustache"
+            android:textSize="22sp"
+            android:textColor="@color/turkish_sea" />
+
+        <!-- CheckBox for Nose -->
+        <CheckBox
+            android:id="@+id/noseCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nose"
+            android:textSize="22sp"
+            android:textColor="@color/turkish_sea" />
+
+        <!-- CheckBox for Shoes -->
+        <CheckBox
+            android:id="@+id/shoesCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoes"
+            android:textSize="22sp"
+            android:textColor="@color/turkish_sea" />
+    </GridLayout>
+    <!-- ImageView for Ear -->
+    <ImageView
+        android:id="@+id/earImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ear"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxContainer"
+        android:visibility="invisible"/>
+
+    <!-- ImageView for Eyes -->
+    <ImageView
+        android:id="@+id/eyesImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eyes"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxContainer"
+        android:visibility="invisible"/>
+
+    <!-- ImageView for Glasses -->
+    <ImageView
+        android:id="@+id/glassesImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/glasses"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxContainer"
+        android:visibility="invisible"/>
+
+    <!-- ImageView for Arms -->
+    <ImageView
+        android:id="@+id/armsImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arms"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxContainer"
+        android:visibility="invisible"/>
+
+    <!-- ImageView for Eyebrows -->
+    <ImageView
+        android:id="@+id/eyebrowsImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eyebrowse"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxContainer"
+        android:visibility="invisible"/>
+
+    <!-- ImageView for Hat -->
+    <ImageView
+        android:id="@+id/hatImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hat"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxContainer"
+        android:visibility="invisible"/>
+
+    <!-- ImageView for Mouth -->
+    <ImageView
+        android:id="@+id/mouthImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mouth"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxContainer"
+        android:visibility="invisible"/>
+
+    <!-- ImageView for Eyes -->
+    <ImageView
+        android:id="@+id/mustacheImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mustache"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxContainer"
+        android:visibility="invisible"/>
+
+    <!-- ImageView for Nose -->
+    <ImageView
+        android:id="@+id/noseImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nose"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxContainer"
+        android:visibility="invisible"/>
+
+    <!-- ImageView for Eyes -->
+    <ImageView
+        android:id="@+id/shoesImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shoes"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/checkBoxContainer"
+        android:visibility="invisible"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
